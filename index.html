@@ -1,0 +1,51 @@
+<!doctype html>
+
+<head>
+	<title>Ramped header</title>
+	
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		header{
+			width: 100%;
+			position: relative;
+		}
+		
+		header p{
+			text-align: center;
+			z-index: 1;
+		}
+	
+		#left{
+			background-color: rgb(180, 0, 75);
+			width: 50%;
+			height: 82px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+		
+		#right{
+			background-color: rgb(224, 0, 44);
+			width: 50%;
+			height: 82px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: -1;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<header>
+		<p><img src="rampe.png" /></p>
+		<div id="left"></div>
+		<div id="right"></div>
+	</header>
+</body>
